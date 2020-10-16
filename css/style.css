@@ -6,8 +6,8 @@ body {
 }
 
 .wrapper {
-    width: 1850px;
-    height: 1350px;
+    width: 1900px;
+    height: 1400px;
     background-color: #03492f;
     border-radius: 40%;
     border: 15px solid #a52a2a;
@@ -24,7 +24,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 10px 0px;
+    gap: 20px 0px;
     grid-template-areas:
       "ace-of-spades k-of-spades q-of-spades j-of-spades ten-of-spades nine-of-spades eight-of-spades seven-of-spades six-of-spades"
       "ace-cross k-cross q-cross j-cross ten-cross nine-cross eight-cross seven-cross six-cross"
@@ -79,7 +79,7 @@ body {
 .fr-letter {
     color: #ff0000;
     font-weight: bold;
-    margin-top: -1px;
+    margin-top: px;
     margin-left: 5px;
 }
 
@@ -129,7 +129,8 @@ body {
 .flip-container, .front, .back {
     width: 110px;
     height: 160px;
-    border-radius: 10%; 
+    
+    
 }
     
 .flipper {
@@ -150,7 +151,9 @@ body {
 }
 
 .back {
+    margin-top: 17px;
     transform: rotateY(180deg);
+    border-radius: 10%; 
     background: rgb(63,94,251);
     background: radial-gradient(circle, rgba(63,94,251,1) 7%, rgba(70,252,78,0) 24%, rgba(70,252,78,1) 44%, rgba(70,252,78,0) 52%, rgba(63,94,251,1) 100%);
 }
