@@ -1,0 +1,156 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: yellow;
+}
+
+.wrapper {
+    width: 1850px;
+    height: 1350px;
+    background-color: #03492f;
+    border-radius: 40%;
+    border: 15px solid #a52a2a;
+    margin: 0 auto;
+}
+
+.grid-container {
+    position: relative;
+    top: 340px;
+    left: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px 0px;
+    grid-template-areas:
+      "ace-of-spades k-of-spades q-of-spades j-of-spades ten-of-spades nine-of-spades eight-of-spades seven-of-spades six-of-spades"
+      "ace-cross k-cross q-cross j-cross ten-cross nine-cross eight-cross seven-cross six-cross"
+      "ace-of-hearts k-of-hearts q-of-hearts j-of-hearts ten-of-hearts nine-of-hearts eight-of-hearts seven-of-hearts six-of-hearts"
+      "ace-of-diamonds k-of-diamonds q-of-diamonds j-of-diamonds ten-of-diamonds nine-of-diamonds eight-of-diamonds seven-of-diamonds six-of-diamonds";
+}
+
+.ace-of-spades { grid-area: ace-of-spades; }
+.ace-cross { grid-area: ace-cross; }
+.ace-of-hearts { grid-area: ace-of-hearts; }
+.ace-of-diamonds { grid-area: ace-of-diamonds; }
+.k-of-diamonds { grid-area: k-of-diamonds; }
+.q-of-diamonds { grid-area: q-of-diamonds; }
+.j-of-diamonds { grid-area: j-of-diamonds; }
+.ten-of-diamonds { grid-area: ten-of-diamonds; }
+.nine-of-diamonds { grid-area: nine-of-diamonds; }
+.eight-of-diamonds { grid-area: eight-of-diamonds; }
+.seven-of-diamonds { grid-area: seven-of-diamonds; }
+.six-of-diamonds { grid-area: six-of-diamonds; }
+.k-of-hearts { grid-area: k-of-hearts; }
+.q-of-hearts { grid-area: q-of-hearts; }
+.j-of-hearts { grid-area: j-of-hearts; }
+.ten-of-hearts { grid-area: ten-of-hearts; }
+.nine-of-hearts { grid-area: nine-of-hearts; }
+.eight-of-hearts { grid-area: eight-of-hearts; }
+.seven-of-hearts { grid-area: seven-of-hearts; }
+.six-of-hearts { grid-area: six-of-hearts; }
+.k-cross { grid-area: k-cross; }
+.q-cross { grid-area: q-cross; }
+.j-cross { grid-area: j-cross; }
+.ten-cross { grid-area: ten-cross; }
+.nine-cross { grid-area: nine-cross; }
+.eight-cross { grid-area: eight-cross; }
+.seven-cross { grid-area: seven-cross; }
+.six-cross { grid-area: six-cross; }
+.k-of-spades { grid-area: k-of-spades; }
+.q-of-spades { grid-area: q-of-spades; }
+.j-of-spades { grid-area: j-of-spades; }
+.ten-of-spades { grid-area: ten-of-spades; }
+.nine-of-spades { grid-area: nine-of-spades; }
+.eight-of-spades { grid-area: eight-of-spades; }
+.seven-of-spades { grid-area: seven-of-spades; }
+.six-of-spades { grid-area: six-of-spades; }
+
+.card {
+    width: 110px;
+    height: 160px;
+    background-color:#fff;
+    border-radius: 10%;
+}
+
+.fr-letter {
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: -1px;
+    margin-left: 5px;
+}
+
+.spades {
+    color: #000;
+    font-size: 80px;
+    margin-left: 30px;
+}
+
+.hearts {
+    color: #ff0000;
+    font-size: 80px;
+    margin-left: 30px;
+}
+
+.diamonds {
+    color: #ff0000;
+    font-size: 80px;
+    margin-left: 35px;
+}
+
+.cross {
+    color: #000;
+    font-size: 80px;
+    margin-left: 25px;
+}
+
+.tr-letter {
+    font-weight: bold;
+    transform: rotate(-180deg);
+    color: #ff0000;
+    margin-right: 5px;
+}
+
+.black {
+    color:#000;
+}
+
+.flip-container {
+    perspective: 1000;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+    
+.flip-container, .front, .back {
+    width: 110px;
+    height: 160px;
+    border-radius: 10%; 
+}
+    
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+    
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+    
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 7%, rgba(70,252,78,0) 24%, rgba(70,252,78,1) 44%, rgba(70,252,78,0) 52%, rgba(63,94,251,1) 100%);
+}
