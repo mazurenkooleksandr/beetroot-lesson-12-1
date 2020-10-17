@@ -10,7 +10,7 @@ body {
     height: 1400px;
     background-color: #03492f;
     border-radius: 40%;
-    border: 15px solid #a52a2a;
+    border: 10px solid #a52a2a;
     margin: 0 auto;
 }
 
@@ -24,7 +24,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 20px 0px;
+    gap: 10px 0px;
     grid-template-areas:
       "ace-of-spades k-of-spades q-of-spades j-of-spades ten-of-spades nine-of-spades eight-of-spades seven-of-spades six-of-spades"
       "ace-cross k-cross q-cross j-cross ten-cross nine-cross eight-cross seven-cross six-cross"
@@ -79,39 +79,50 @@ body {
 .fr-letter {
     color: #ff0000;
     font-weight: bold;
-    margin-top: px;
+    font-size: 20px;
     margin-left: 5px;
 }
 
 .spades {
     color: #000;
     font-size: 80px;
-    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
 }
 
 .hearts {
     color: #ff0000;
     font-size: 80px;
-    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
 }
 
 .diamonds {
     color: #ff0000;
     font-size: 80px;
-    margin-left: 35px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
 }
 
 .cross {
     color: #000;
     font-size: 80px;
-    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
 }
 
 .tr-letter {
     font-weight: bold;
+    font-size: 20px;
     transform: rotate(-180deg);
     color: #ff0000;
     margin-right: 5px;
+    position: relative;
+    top:-10px;
 }
 
 .black {
@@ -128,9 +139,7 @@ body {
     
 .flip-container, .front, .back {
     width: 110px;
-    height: 160px;
-    
-    
+    height: 160px;  
 }
     
 .flipper {
